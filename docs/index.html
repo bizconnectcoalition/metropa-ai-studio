@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Studio</title>
+<meta name="description" content="">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/app.css">
+<script src="brand.js"></script>
+</head>
+<body>
+<main>
+  <section class="hero wrap">
+    <span class="eyebrow" data-brand="hero.eyebrow"></span>
+    <h1 data-brand-html="hero.titleHtml"></h1>
+    <p class="lead" data-brand="hero.lead"></p>
+  </section>
+
+  <section class="wrap">
+    <div class="section-head pick-head">
+      <h2>What would you like to create?</h2>
+      <div class="mode-toggle" id="mode-toggle" role="group" aria-label="How many tools to show"></div>
+    </div>
+    <p class="hover-hint" id="hover-hint"></p>
+    <div class="cards" id="cards"></div>
+    <div class="more-tools" id="more-tools"></div>
+  </section>
+
+  <section class="wrap" id="recent-wrap" style="margin-top:40px">
+    <div class="section-head"><div><span class="eyebrow">Your library</span><h2 style="margin-top:8px">Recent creations</h2></div><a class="linkish" href="account.html#history">View all →</a></div>
+    <div class="history" id="recent"></div>
+    <p class="muted hidden" id="recent-empty" style="font-size:14px">Nothing yet. Your images, videos, voiceovers and documents will appear here.</p>
+  </section>
+</main>
+<script src="assets/studios.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/mic.js"></script>
+<script src="assets/controls.js"></script>
+<script src="assets/previews.js"></script>
+<script src="assets/preview.js"></script>
+<script src="assets/home.js"></script>
+</body>
+</html>

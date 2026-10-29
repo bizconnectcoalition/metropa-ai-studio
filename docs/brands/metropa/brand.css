@@ -1,0 +1,37 @@
+/* Metro AI Studio — theme. Metro Public Adjustment's deep green (#003928) becomes the dark canvas and its
+   gold (#FEB703, the CTA color on metropa.com) the accent. Fonts: Maven Pro (headings, labels) + Lato (body), as on metropa.com.
+   Contrast checked: card first stop 1.71:1 vs --bg-900, --slate 5.2:1 and --card-muted 6.5:1 on the lightest card stop,
+   dark button text on gold ~10:1 (never white text on gold: 1.75:1). */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Maven+Pro:wght@500;600;700&display=swap");
+:root{
+  --bg-950:#00160F; --bg-900:#001D15; --bg-800:#00261B; --bg-700:#003022; --bg-600:#0E4A37;
+  --ink:#000F0A;
+  --accent:#FEB703;
+  --accent-hi:#FFCC4D;
+  --accent-glow:#FFE29A;
+  --accent-deep:#D99A00;
+  --text:#F5F7F2; --text-dim:#D6E0DA;
+  --slate:#A9BDB4; --slate-dim:#6F877D;
+  --green:#6FD39B; --red:#E0776B;
+  --accent-rgb:254,183,3; --accent-hi-rgb:255,204,77; --text-rgb:245,247,242; --slate-rgb:169,189,180;
+  --bg-950-rgb:0,22,15; --bg-700-rgb:0,48,34; --bg-600-rgb:14,74,55;
+  --bg-raise-rgb:0,43,30;
+  --ink-rgb:0,15,10; --overlay-rgb:0,8,5;
+  --line:rgba(254,183,3,.20);
+  --line-soft:rgba(169,189,180,.14);
+  --card:linear-gradient(165deg,#0F4936 0%,#0B4030 55%,#083A2B 100%);
+  --card-border:rgba(255,255,255,.13);
+  --card-border-hover:rgba(var(--accent-hi-rgb),.55);
+  --card-muted:#C2D1CA;
+  --tier-fast-text:#9BE8BC;
+  --ico-sat:.75;
+  --shadow-card:inset 0 1px 0 rgba(255,255,255,.08),0 1px 2px rgba(0,0,0,.45),0 8px 18px -6px rgba(0,0,0,.55),0 22px 44px -22px rgba(0,0,0,.65);
+  --shadow-card-hover:inset 0 1px 0 rgba(255,255,255,.11),0 2px 4px rgba(0,0,0,.45),0 16px 30px -8px rgba(0,0,0,.6),0 34px 60px -26px rgba(0,0,0,.7);
+  /* Maven Pro has no italic, so the italic accent face is Lato */
+  --serif:'Maven Pro',system-ui,sans-serif; --serif-2:'Lato',system-ui,sans-serif;
+  --sans:'Lato',system-ui,sans-serif; --mono:'Maven Pro',system-ui,sans-serif;
+  --r:12px; --maxw:1240px;
+  --shadow-lg:0 30px 70px -30px rgba(0,0,0,.65); --shadow-md:0 18px 40px -22px rgba(0,0,0,.55);
+}
+/* Maven Pro reads thin at the template's weights; a claims firm wants firmer headings */
+h1,h2,h3{font-weight:700;letter-spacing:-.01em}
